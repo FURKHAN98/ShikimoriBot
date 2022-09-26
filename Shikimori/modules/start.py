@@ -35,7 +35,7 @@ from Shikimori.vars import (
     PM_START_TEXT,
     UPDATE_CHANNEL,
     SUPPORT_CHAT,
-    ANIME_NAME,
+    ANIME_NAME, 
     START_MEDIA,)
 from Shikimori.modules.helper_funcs.misc import paginate_modules
 from Shikimori.modules.helper_funcs.chat_status import is_user_admin
@@ -54,10 +54,17 @@ buttons = [
         InlineKeyboardButton(
             text=f"➕ Aᴅᴅ Mᴇ Tᴏ Yᴏᴜʀ Cʜᴀᴛ ➕", url=f"t.me/{BOT_USERNAME}?startgroup=true"),
     ],
-    [
+     [
         InlineKeyboardButton(text="Sᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
         InlineKeyboardButton(text="Uᴘᴅᴀᴛᴇ", url=f"https://t.me/{UPDATE_CHANNEL}"),   
     ], 
+     [   
+       
+        InlineKeyboardButton(
+             text="ʜᴇʟᴘ & ᴄᴍᴅs❔", 
+             callback_data="help_back") 
+    ], 
+
 ]
 
 def start(update: Update, context: CallbackContext):
